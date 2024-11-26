@@ -121,6 +121,8 @@ def setup(target_dir, platform):
         os.chdir(webrtc_dir)
         print('Fetching WebRTC for %s...' % platform)
         sh('fetch --nohooks webrtc_%s' % platform, env)
+        os.chdir('src')  # Navigate to the source directory
+        sh('git checkout branch-heads/5993')  # Replace with the correct branch or tag
 
     # Run gclient
     sh('gclient sync', env)
