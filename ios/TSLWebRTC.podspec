@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
-  s.name             = 'JitsiWebRTC'
+  s.name             = 'TSLWebRTC'
   s.version          = '124.0.2'
   s.summary          = 'WebRTC build provided by Jitsi'
   s.description      = 'This is the WebRTC build the Jitsi project uses and provides for React Native WebRTC'
-  s.homepage         = 'https://github.com/jitsi/webrtc'
+  s.homepage         = 'https://github.com/TalkShopLive/webrtc'
   s.license          = { :type => 'BSD', :text => <<-LICENSE
   Copyright (c) 2011, The WebRTC project authors. All rights reserved.
 
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
   LICENSE
   }
   s.authors          = 'The WebRTC project authors'
-  s.source           = { :http => 'https://github.com/jitsi/webrtc/releases/download/v124.0.2/WebRTC.xcframework.zip', :flatten => false }
+  s.source           = { :http => 'https://github.com/TalkShopLive/webrtc/releases/download/v124.0.2/WebRTC.xcframework.zip', :flatten => false }
   s.platforms        = { :ios => '12.0', :osx => '13.0' }
   s.vendored_frameworks = 'WebRTC.xcframework'
 end
